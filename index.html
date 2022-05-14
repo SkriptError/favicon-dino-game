@@ -5,6 +5,7 @@
 	</head>
 	<body>
 		<h1 style="text-align:center">^ Look at the tab icon for this page ^</h1>
+		<canvas id="CANVAS" width="200" height="100" style="border:1px solid #000000;"></canvas>
 		<script>
 		// create the canvas
 		var canvas = document.createElement("CANVAS");
@@ -280,7 +281,7 @@
 			// set and display high score
 			if (score > highScore) {
 				highScore = score;
-				document.title = "High: " + highScore;
+				document.title = "High Score: " + highScore;
 			}
 			
 			if (spaceDown) {
