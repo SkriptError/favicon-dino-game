@@ -297,6 +297,7 @@
 			if (spaceDown && newSpacePress) {
 				currentState = game;
 				gameStart();
+				document.title = "Hi: " + highScore;
 			} else if (!spaceDown && !newSpacePress) {
 				newSpacePress = true;
 			}
