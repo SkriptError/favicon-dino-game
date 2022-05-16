@@ -285,6 +285,11 @@
 				highScore = score;
 				document.title = "Game Over! Hi: " + highScore;
 			}
+			// display gameover if high score isn't above score
+			if (score < highScore) {
+				highScore = score;
+				document.title = "Game Over! Hi: " + highScore;
+			}
 			
 			if (spaceDown) {
 				// prevent the game from starting over if space was already held down
