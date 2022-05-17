@@ -162,7 +162,7 @@
 		function gameStart() {
 			yVel = 0.8;
 			dinoY = 0;
-			score = 9990;
+			score = 0;
 			cacti.length = 0; // empty cacti array
 		}
 			
@@ -296,10 +296,10 @@
 			}
 		}
 		
-			// display Win if score is above 9999
-			if (score > 9999) {
-				document.title = "Game Win! Thanks for Playing!";
-			}	
+		// display Win if score is above 9999
+		if (score > 9999) {
+			document.title = "Game Win! Thanks for Playing!";
+		}	
 			
 		function gameOver() {
 			// prevent the game from starting over if space was already held down
