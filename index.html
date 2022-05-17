@@ -289,10 +289,6 @@
 			if (score < highScore) {
 				document.title = "Game Over! Hi: " + highScore;
 			}
-						// display Win if score is above 9999
-			if (score > 9999) {
-				document.title = "Game Win! Thanks for Playing!";
-			}
 			
 			if (spaceDown) {
 				// prevent the game from starting over if space was already held down
@@ -300,6 +296,11 @@
 			}
 		}
 		
+			// display Win if score is above 9999
+			if (score > 9999) {
+				document.title = "Game Win! Thanks for Playing!";
+			}	
+			
 		function gameOver() {
 			// prevent the game from starting over if space was already held down
 			if (spaceDown && newSpacePress) {
