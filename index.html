@@ -283,12 +283,10 @@
 			// set and display high score
 			if (score > highScore) {
 				highScore = score;
-				ctx.fillStyle="FF0000";
 				document.title = "Game Over! Hi: " + highScore;
 			}
 			// display gameover if high score isn't above score
 			if (score < highScore) {
-				ctx.fillStyle="FF0000";
 				document.title = "Game Over! Hi: " + highScore;
 			}
 			
