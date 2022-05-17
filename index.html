@@ -162,7 +162,7 @@
 		function gameStart() {
 			yVel = 0.8;
 			dinoY = 0;
-			score = 0;
+			score = 9990;
 			cacti.length = 0; // empty cacti array
 		}
 			
@@ -288,6 +288,10 @@
 			// display gameover if high score isn't above score
 			if (score < highScore) {
 				document.title = "Game Over! Hi: " + highScore;
+			}
+						// display Win if score is above 9999
+			if (score > 9999) {
+				document.title = "Game Win! Thanks for Playing!";
 			}
 			
 			if (spaceDown) {
